@@ -48,30 +48,30 @@ Logs performance metrics and returns to client.
 
 1. Create Python Virtual Environment
 
-<pre> '''python -m venv venv '''</pre>
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+<pre> python -m venv venv </pre>
+<pre>source venv/bin/activate</pre>  # On Windows: venv\Scripts\activate
 
 2. Clone the Project
 
-git clone https://github.com/elte-cybersec/HE-Evaluation.git
-cd HE-Evaluation
+<pre>git clone https://github.com/elte-cybersec/HE-Evaluation.git</pre>
+<pre>cd HE-Evaluation</pre>
 
 3. Install Requirements
 
-pip install -r requirements.txt
+<pre>pip install -r requirements.txt</pre>
 
 ## Running the Project
 
 Client-side Encryption
 
-python Client_HE_Parameter.py  # For HE encryption
-python Client_traditionalweb.py  # For AES, RSA-AES, etc.
+<pre>python Client_HE_Parameter.py</pre>  # For HE encryption
+<pre>python Client_traditionalweb.py</pre>  # For AES, RSA-AES, etc.
 
 Server-side (hosted in Azure VM)
 
-python Server_HE_trad_compute.py
+<pre>python Server_HE_trad_compute.py</pre>
 
-Navigate to http://<your_vm_ip>:80 in a browser to access the web UI.
+Navigate to <pre>http://<your_vm_ip>:80</pre> in a browser to access the web UI.
 
 ## Performance Metrics Captured
 
