@@ -2,11 +2,11 @@ README.md
 
 Title: Performance Evaluation of Homomorphic Encryption Parameter Tuning for Secure Cloud Data ProcessingAuthor: Sanon IsoobaRepository: https://github.com/elte-cybersec/HE-Evaluation
 
-Project Motivation and Scope
+# Project Motivation and Scope
 
 This project demonstrates a practical implementation of client-cloud privacy-preserving data computation using Homomorphic Encryption (HE) and traditional cryptographic techniques. The goal is to evaluate how BFV scheme parameters affect the performance of HE under real cloud conditions (Azure) and compare it with AES, RSA-AES, Blowfish, and ChaCha20. The study contributes to ongoing research on balancing performance and security in secure cloud data processing.
 
-Key Features
+## Key Features
 
 HE Parameter Tuning: Enables testing various poly_modulus_degree and plain_modulus values using TenSEAL (based on Microsoft SEAL).
 
@@ -18,21 +18,21 @@ Performance Metrics: Captures encryption/decryption time, CPU/memory usage, and 
 
 Resource Monitoring: Integrated with psutil to monitor runtime CPU and memory usage.
 
-Repository Contents
+# Repository Contents
 
-Client_HE_Parameter.py
+- Item Client_HE_Parameter.py
 
 Encrypts files using TenSEAL's BFV scheme.
 
 Allows parameter tuning and uploads ciphertext/context to Azure Blob Storage.
 
-Client_traditionalweb.py
+- Item Client_traditionalweb.py
 
 Encrypts/decrypts files using traditional cryptographic schemes.
 
 GUI prompts user to select algorithm and measures encryption/decryption time.
 
-Server_HE_trad_compute.py
+- Item Server_HE_trad_compute.py
 
 Web-based interface (Flask) hosted on Azure VM.
 
@@ -44,11 +44,11 @@ Plaintext computation after decryption (for traditional algorithms)
 
 Logs performance metrics and returns to client.
 
-Setup Instructions
+## Setup Instructions
 
 1. Create Python Virtual Environment
 
-python -m venv venv
+<pre> '''python -m venv venv '''</pre>
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 2. Clone the Project
@@ -60,7 +60,7 @@ cd HE-Evaluation
 
 pip install -r requirements.txt
 
-Running the Project
+## Running the Project
 
 Client-side Encryption
 
@@ -73,7 +73,7 @@ python Server_HE_trad_compute.py
 
 Navigate to http://<your_vm_ip>:80 in a browser to access the web UI.
 
-Performance Metrics Captured
+## Performance Metrics Captured
 
 Encryption Time (s)
 
@@ -87,7 +87,7 @@ Memory Usage (MB) before and after computation
 
 Throughput (MB/s)
 
-Practical Notes
+## Practical Notes
 
 Cloud Runtime: Hosted in a Windows Azure VM with 16GB RAM and 4 CPUs.
 
