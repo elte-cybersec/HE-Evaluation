@@ -1,6 +1,4 @@
-README.md
 
-Title: Performance Evaluation of Homomorphic Encryption Parameter Tuning for Secure Cloud Data ProcessingAuthor: Sanon IsoobaRepository: https://github.com/elte-cybersec/HE-Evaluation
 
 # Project Motivation and Scope
 
