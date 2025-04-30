@@ -94,4 +94,4 @@ File Sizes Tested: Experiments were performed on 2MB and 5MB files.
 Parameter Sets: BFV evaluated across 6 parameter sets with varying n and p values.
 
 Security Advantage: HE preserves data privacy during computation; traditional schemes expose data during computation phase.
-Add professional README.md with project structure and setup instructions
+
